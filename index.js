@@ -1,6 +1,7 @@
 /* Form Elements */
 const timePicker = document.getElementById('event-time');
 const generateBtn = document.getElementById('generate');
+const clipboardCopy = document.getElementById('clipboard-copy');
 
 /* Pages */
 const generationPage = document.getElementById('generation-page');
@@ -14,6 +15,13 @@ const timeOutput = document.getElementById('time-output');
 const discordTimeOutput = document.getElementById('discord-ts-output');
 
 generateBtn.addEventListener('click', onGenerateClicked);
+clipboardCopy.addEventListener('click', () => {
+  navigator.clipboard.writeText(document.location.href);
+  clipboardCopy.innerText = "Copied";
+  setTimeout(() => {
+    clipboardCopy.innerText = "Copy to clipboard";
+  }, 2000);
+});
 
 function updateRouter() {
   pages.forEach((page, idx) => {
