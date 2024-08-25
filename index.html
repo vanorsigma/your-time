@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Local Timestamp Sharable Generator</title>
+  </head>
+  <div id="generation-page">
+    <h1>Timestamp generator</h1>
+    <p>Specify a date/time and get a link that displays that time in local timezones.</p>
+
+    <div>
+      <input type="datetime-local" id="event-time" name="event-time" />
+      <button id="generate">Generate</button>
+    </div>
+  </div>
+
+  <div id="display-page">
+    <h1>That event happens at</h1>
+    <p id="time-output"></p>
+    <p>Discord Timestamp: <span id="discord-ts-output"></span></p>
+  </div>
+
+  <script src="index.js"></script>
+</html>
