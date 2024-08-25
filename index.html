@@ -1,8 +1,14 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Local Timestamp Sharable Generator</title>
   </head>
-  <div id="generation-page">
+
+  <div id="loading-page">
+    Loading please wait...
+  </div>
+
+  <div id="generation-page" style="display: none">
     <h1>Timestamp generator</h1>
     <p>Specify a date/time and get a link that displays that time in local timezones.</p>
 
@@ -12,7 +18,7 @@
     </div>
   </div>
 
-  <div id="display-page">
+  <div id="display-page" style="display: none">
     <h1>That event happens at</h1>
     <p id="time-output"></p>
     <p>Discord Timestamp: <span id="discord-ts-output"></span></p>

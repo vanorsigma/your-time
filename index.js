@@ -5,7 +5,8 @@ const generateBtn = document.getElementById('generate');
 /* Pages */
 const generationPage = document.getElementById('generation-page');
 const displayPage = document.getElementById('display-page');
-let pages = [generationPage, displayPage];
+const loadingPage = document.getElementById('loading-page');
+let pages = [generationPage, displayPage, loadingPage];
 let currentPage = 0;
 
 /* Output Elements */
